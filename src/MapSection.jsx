@@ -99,7 +99,7 @@ export default function MapSection() {
         ></div>
 
         <p id="currentLocation" style={{ marginTop: "0.75rem" }}>
-          Current location will appear here.
+          Current location will be KL University/Vaddeswaram/vijayawada.
         </p>
       </div>
     </section>
