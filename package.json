@@ -6,6 +6,11 @@
     "node": "20.x"
   },
   "scripts": {
+  "dev": "vite",
+  "build": "node build.mjs",
+  "preview": "vite preview"
+},
+  "scripts": {
     "dev": "vite",
     "build": "npx vite build",
     "preview": "vite preview"
