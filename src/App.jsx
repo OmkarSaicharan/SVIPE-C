@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles.css';
-
+import MapSection from "./MapSection";
 const App = () => {
   useEffect(() => {
     // Mobile menu toggle
@@ -758,6 +758,7 @@ const App = () => {
           </div>
         </div>
       </section>
+<MapSection />
 
       {/* Footer */}
       <footer className="footer">
