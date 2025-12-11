@@ -21,7 +21,7 @@ export default function MapSection() {
     let currentLocationMarker = null;
 
     // Locate Me button
-    const locateBtn = document.getElementById("locateMe on windows");
+    const locateBtn = document.getElementById("locateMe");
 
     const handleLocate = () => {
       if (!navigator.geolocation) {
@@ -85,7 +85,7 @@ export default function MapSection() {
           style={{ marginBottom: "1rem" }}
           type="button"
         >
-          Locate Me
+          Locate In Windows
         </button>
 
         <div
