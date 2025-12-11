@@ -21,7 +21,7 @@ export default function MapSection() {
     let currentLocationMarker = null;
 
     // Locate Me button
-    const locateBtn = document.getElementById("locateMe");
+    const locateBtn = document.getElementById("locateMe on windows");
 
     const handleLocate = () => {
       if (!navigator.geolocation) {
