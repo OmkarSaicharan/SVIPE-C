@@ -21,7 +21,7 @@ export default function useGoogleMaps() {
     // Load script
     const script = document.createElement("script");
     script.src =
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places";
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyADC_7euvIbHyQDnxiru3KVbzm5UnXliJo&libraries=places";
     script.async = true;
     script.defer = true;
     script.dataset.gmaps = "true";
