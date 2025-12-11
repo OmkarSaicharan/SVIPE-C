@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 const GOOGLE_MAPS_SRC =
-  "https://maps.googleapis.com/maps/api/js?key=AlzaSyADC_7euvIbHyQDn...5UnXliJo&libraries=places";
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyADC_7euvIbHyQDnxiru3KVbzm5UnXliJo&libraries=places";
 
 export default function useGoogleMaps() {
   const [loaded, setLoaded] = useState(false);
