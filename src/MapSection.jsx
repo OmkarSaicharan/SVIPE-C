@@ -10,7 +10,7 @@ export default function MapSection() {
     if (!loaded || !mapRef.current) return;
 
     const map = new window.google.maps.Map(mapRef.current, {
-      center: { lat: 17.385, lng: 78.486 }, // set your default
+      center: { lat: 17.385, lng: 78.486 },
       zoom: 12,
       mapTypeControl: false,
       streetViewControl: false,
@@ -20,8 +20,9 @@ export default function MapSection() {
     const geocoder = new window.google.maps.Geocoder();
     let currentLocationMarker = null;
 
-    // Locate Me button handler (if you add a button with id="locateMe")
+    // Locate Me button
     const locateBtn = document.getElementById("locateMe");
+
     const handleLocate = () => {
       if (!navigator.geolocation) {
         alert("Geolocation not supported in this browser.");
@@ -35,9 +36,11 @@ export default function MapSection() {
             lng: position.coords.longitude,
           };
 
+          // Move map to current location
           map.setCenter(pos);
-          map.setZoom(14);
+          map.setZoom(15);
 
+          // Add / update marker
           if (currentLocationMarker) {
             currentLocationMarker.setPosition(pos);
           } else {
@@ -48,6 +51,7 @@ export default function MapSection() {
             });
           }
 
+          // Reverse geocode
           geocoder.geocode({ location: pos }, (results, status) => {
             if (status === "OK" && results[0]) {
               const locationName = results[0].formatted_address;
@@ -56,6 +60,7 @@ export default function MapSection() {
             }
           });
         },
+
         () => {
           alert("Unable to retrieve your location.");
         }
@@ -74,7 +79,6 @@ export default function MapSection() {
       <div className="container">
         <h2 style={{ marginBottom: "1rem" }}>Our Location</h2>
 
-        {/* Optional: Locate Me button */}
         <button
           id="locateMe"
           className="btn"
@@ -92,7 +96,8 @@ export default function MapSection() {
             borderRadius: "12px",
             overflow: "hidden",
           }}
-        />
+        ></div>
+
         <p id="currentLocation" style={{ marginTop: "0.75rem" }}>
           Current location will appear here.
         </p>
