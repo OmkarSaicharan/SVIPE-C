@@ -630,6 +630,28 @@ const App = () => {
                 </a>
               </div>
             </div>
+             <div className="portfolio-item">
+              <img
+                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80"
+                alt="UPSC Book Library"
+                className="portfolio-img"
+              />
+              <div className="portfolio-content">
+                <h3>UPSC Book Library</h3>
+                <p>
+                  All Topics and Content of upsc preparation in one place. All related links downloads videos and materials in one click.
+                </p>
+                <a
+                  href="https://omkarsaicharan.github.io/Bookmatte/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-outline"
+                  style={{ padding: '0.75rem 1.5rem', fontSize: '0.875rem' }}
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
